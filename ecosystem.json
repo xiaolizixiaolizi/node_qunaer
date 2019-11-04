@@ -25,7 +25,7 @@
       "port": "22000",
       "ref": "origin/master",
       "repo": "git@github.com:xiaolizixiaolizi/node_qunaer.git",
-      "path": "/www/qunaer1/production",
+      "path": "/www/qunaer/production",
       "ssh_options": "StrictHostKeyChecking=no",
       "post-deploy": "npm install && pm2 startOrRestart ecosystem.json",
       "env": {
