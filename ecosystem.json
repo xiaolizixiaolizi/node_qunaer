@@ -27,7 +27,7 @@
       "repo": "git@github.com:xiaolizixiaolizi/node_qunaer.git",
       "path": "/www/qunaer/production",
       "ssh_options": "StrictHostKeyChecking=no",
-      "post-deploy": "npm install --register=https://register.npm.taobao.org && pm2 startOrRestart",
+      "post-deploy": "npm install --registry=https://registry.npm.taobao.org && pm2 startOrRestart ecosystem.json",
       "env": {
         "NODE_ENV": "production"
       }
