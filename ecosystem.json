@@ -25,8 +25,9 @@
       "port": "22000",
       "ref": "origin/master",
       "repo": "git@github.com:xiaolizixiaolizi/node_qunaer.git",
-      "path": "/www/website/production",
+      "path": "/www/qunaer/production",
       "ssh_options": "StrictHostKeyChecking=no",
+      "post-deploy": "npm install --register=https://register.npm.taobao.org && grunt build && pm2 startOrRestart",
       "env": {
         "NODE_ENV": "production"
       }
