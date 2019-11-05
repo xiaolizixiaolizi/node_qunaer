@@ -8,9 +8,9 @@ const parameter = require('koa-parameter')
 const path = require('path')
 
 ~(async () => {
-  await require('./db/index')()
+  await require('./db/index')
 })()
-
+console.log('process.env.NODE_ENV ',process.env.NODE_ENV )
 app.use(error({ //错误处理中间件
   postFormat(err, { stack, ...rest }) {
     // 生产环境=上线环境
